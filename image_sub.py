@@ -43,8 +43,6 @@ class Target:
         self.target_pos = target_pos
         self.target_view = target_view
 
-
-
 class ImageSub(Node):
     def __init__(self, nodeName):
         super().__init__(nodeName)
@@ -64,7 +62,7 @@ class ImageSub(Node):
         # Save copy of processed workspace
         cv2.imwrite("processed.jpg", current_frame)
         
-        input('continue ?')
+        input('Continue construction ?')
 
         scanner = TemplateScanner()
         target_list = scanner.scan()
@@ -112,7 +110,7 @@ class ImageSub(Node):
             
             self.moveBlock(move_dir, new_angle, target_pos, blockType)
        
-        # ===================================================================================
+    # ===================================================================================
     
     def moveBlock(self, move_dir, angle, target_pos, blockType):
             global last_z
