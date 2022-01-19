@@ -18,3 +18,5 @@ NTU CSIE5047 FALL 2021 GROUP 10
 ```template_scanner.py``` contains the logic required to convert a 2-dimensional template into a 3-dimensional building plan.
 
 ```rotation.py``` is a supplementary procedure written for calibration purposes.
+
+```svm_shape_detection.py``` is a supplementary class written to be used for shape detection using a machine learning approach. Although not used in our program due to merging time constraints, it may be integrated in the future.
